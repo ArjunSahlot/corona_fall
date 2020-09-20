@@ -52,7 +52,7 @@ class Corona:
     VEL = 5
 
     def __init__(self):
-        self.x, self.y = random.randint(0 + self.WIDTH, WIDTH - self.WIDTH) , -random.randint(0, 10)*80
+        self.x, self.y = random.randint(0, WIDTH - self.WIDTH) , -random.randint(0, 10)*80
         self.image = pygame.transform.scale(pygame.image.load(os.path.join("assets", "corona.png")), (self.WIDTH, self.HEIGHT))
 
     def move(self, player):
